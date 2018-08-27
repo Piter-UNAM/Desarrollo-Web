@@ -1,0 +1,141 @@
+/** Seleccionando IDS*/
+#titulo {
+  color:red;
+}
+/* Seleccionado Clases */
+.azul {
+  color:blue;
+}
+
+/* Seleccionado Ids y Clases */
+#titulo.titulo {
+  font-size: 30px;
+}
+.titulo {
+  font-size: 60px;
+}
+/*Seleccionando 2 clases **/
+.titulo.azul {
+  color:red;
+  font-size:100px;
+}
+/*Selectores con elementos HTML*/
+p{
+     color: brown;
+}
+h3{
+     color: green;
+}
+h2{
+     color: orange;
+}
+img{
+     width: 300px;
+}
+/*Selectores con elementos HTML y ID*/
+img#logo{
+     width: 600px;
+}
+h2#titulo{
+     color: orange;
+}
+/*Selectores con elementos HTML y clases*/
+section.seccion{
+     background: gray;
+}
+div.noticia{
+     background: white;
+}
+/*selector Universal*/
+/*
+*{
+     color: black!important;
+     font-size: 20px!important;
+}
+*/
+#listado-cursos *{
+     font-size: 30px;
+}
+.noticia *{
+     font-size: 20px;
+}
+/*Selector de grupos*/
+h2,h3,p,a{
+     text-transform: uppercase;
+}
+h2,h3{
+     text-align: center;
+}
+/*Selector descendientes*/
+nav#navegacion{
+     background: orange;
+}
+nav#navegacion ul{
+     list-style: none;
+}
+nav#navegacion ul li{
+     display: inline;
+}
+nav#navegacion ul li a{
+     color: white;
+}
+/*Selector con hijos*/
+section#cursos > ul{
+     border: 1px solid black;
+}
+ul#listado-cursos >li{
+     color: red;
+}
+ul#listado-cursos li ul >li{
+     color: green;
+}
+/*Selector con elementos adyacentes*/
+ul#listado-cursos + p{
+     background-color: red;
+     color: white;
+}/*El + objeto es el que este despues del selector, en es caso ul#listado-cursos tiene como siguiente elemento al p*/
+/*Selector de enlaces*/
+a[href*="facebook.com"]{
+     background-color: yellow;
+}
+a[href*="google.com"]{
+     background-color: purple;
+}
+/*Selector de atributo*/
+img[id="logo"]{
+     margin-top: 10px;
+}
+[class="seccion"]{
+     background-color: blue!important;
+}
+/**Selectores con pseudoclases*/
+/*div.menu nav ul li a:focus,*/
+/*div.menu nav ul li a:active**/
+div.menu nav ul li a:visited{
+     color: black;
+}
+div.menu nav ul li:first-child a{
+     text-decoration: none;
+}/*al igual que first-child existe last-child*/
+div.menu nav ul li a:hover{
+     background-color: orange;
+}/*se aplica cuando el cursor esta sobre el elemento en cuestion*/
+
+/**Selectores con pseudoclases y NTH-CHILD**/
+div.menu nav ul li:nth-child(1){
+     background-color: red;
+}
+div.menu nav ul li:nth-child(2){
+     background-color: yellow;
+}
+div.menu nav ul li:nth-child(3){
+     background-color: purple;
+}div.menu nav ul li:nth-child(4){
+     background-color: blue;
+}
+table tbody tr:nth-child(odd){
+     background-color: orange;
+}/*Aplica a elemntos impares*/
+table tbody tr:nth-child(even){
+     background-color: purple;
+}/*Aplica a elemntos pares*/

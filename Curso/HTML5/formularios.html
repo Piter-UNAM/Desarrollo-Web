@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+          <meta charset="utf-8">
+          <title>Formularios y Campos</title>
+     </head>
+     <body>
+          <h2>Creando formularios</h2>
+          <form class="formulario">
+               <fieldset>
+                    <legend>Tus Datos</legend>
+               <label for="nombre">Nombre:</label>
+               <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="on" required>
+               <br><br>
+               <label for="apellido">Apellido:</label>
+               <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" autocomplete="on" required>
+               <br>
+               <label for="sexo">Sexo:</label>
+               <br>
+               <input type="radio" id="sexo" name="sexo" value="hombre" checked autofocus >Hombre <br>
+               <input type="radio" id="sexo" name="sexo" value="mujer">Mujer <br>
+               <input type="radio" id="sexo" name="sexo" value="otro">Otro <br>
+               <br>
+               <label>Fecha de nacimiento</label>
+               <input type="date" name="fecha"> <br>
+               <input type="datetime-local" name="fecha">
+               <br><br>
+               <label>Correo electronico</label>
+               <input type="email" name="email" placeholder="correo@dominio.com">
+               <br><br>
+               <label>Tu sitio web</label>
+               <input type="url" name="sitioweb" placeholder="http://www.dominio.com">
+               <br><br>
+               <label>Cuanto sabes de HTML5?</label>
+               <input type="range" name="puntaje" min="0" max="10">
+               <br><br>
+               <label>Personas que vienen contigo</label>
+               <input type="number" name="cantidad" min="1" max="5">
+               </fieldset>
+               <!--fieldset es una etiqueta que ayuda a agrupar informacion o contenido que tengan algo en comun
+                    legend imprime un letrero que junta lo que se encuentre en el fieldset-->
+               <br><br>
+               <fieldset>
+                    <legend>Información sobre tu curso:</legend>
+                    <label for="turno">Turno:</label>
+                    <select id="turno" class="turno" name="turno">
+                         <option value="matutino">Matutino</option>
+                         <option value="vespertino">Vespertino</option>
+                         <option value="nocturno">Nocturno</option>
+                    </select>
+                    <br><br>
+                    <label>¿Que curso te gustaria que agregaramos?</label>
+                    <input list="propuesta" name="encuesta">
+                    <datalist id="propuesta">
+                         <option value="JQuery">
+                         <option value="Aplicaciones Web">
+                         <option value="Angular JS">
+                         <option value="Bootstrap">
+                    </datalist>
+                    <br><br>
+                    <label>Elige tus cursos</label> <br>
+                    <input type="checkbox" name="php">PHP <br>
+                    <input type="checkbox" name="html5">HTML5 <br>
+                    <input type="checkbox" name="css">CSS <br>
+                    <input type="checkbox" name="mysql">MySQL <br>
+                    <input type="checkbox" name="javascript">JavaScrpt <br>
+                    <input type="checkbox" name="jquery">jQuery <br>
+                    <label>Fecha que deseas iniciar el curso</label>
+                    <input type="month" name="fecha"><br>
+                    <input type="time" name="fecha"><br>
+                    <input type="week" name="fecha"><br>
+               </fieldset>
+               <br>
+               <fieldset>
+                    <legend>Extra</legend>
+                    <label>Las primeras 10 personas reciben una camisa gratis, elige un color</label>
+                    <input type="color" name="color">
+               </fieldset>
+               <br>
+               <fieldset>
+                    <legend>Usuario y Password</legend>
+                    <label>Usuario:</label><br>
+                    <input type="text" name="usuario" placeholder="Usuario"><br>
+                    <label>Password:</label><br>
+                    <input type="password" name="password" placeholder="Password">
+               </fieldset>
+               <button type="reset" disabled>Borrar</button>
+               <input type="submit" value="enviar">
+          </form>
+     </body>
+</html>

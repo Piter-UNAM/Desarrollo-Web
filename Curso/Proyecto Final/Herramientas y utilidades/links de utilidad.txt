@@ -1,0 +1,10 @@
+https://html5boilerplate.com/
+https://fontawesome.com/
+https://fontawesome.com/v4.7.0/
+https://fonts.google.com/
+
+API de google maps
+https://developers.google.com/maps/documentation/javascript/examples/map-simple?hl=es-419
+https://console.developers.google.com/apis/credentials?project=gdlwebcamp-1526413753702&authuser=0
+https://www.google.com/maps/place/Consulta+Medica+Alborada/@19.688633,-99.1463235,21z/data=!4m5!3m4!1s0x85d1f51e31d3ca57:0xc83387ca640af844!8m2!3d19.6886341!4d-99.1463388
+

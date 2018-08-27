@@ -1,0 +1,235 @@
+<html><head><title>CALCULADORA EN JAVASCRIPT</title></head>
+
+<body bgcolor="beige">
+
+<center>
+
+
+
+<script language="javascript">
+
+//Creo la variable op donde guardo la operación que queremos hacer
+
+var op;
+
+//primera función calcular que opera los elementos de la calculadora sencilla
+
+function calcular()
+
+{
+
+//Creamos las variables que necesitamos para dar el resultado
+
+var num1=0,num2=0,resultado=0;
+
+//recojo los valores de los cuadros de texto y los convierto a float
+
+num1=parseFloat(this.document.calculadora.numero1.value);
+
+num2=parseFloat(this.document.calculadora.numero2.value);
+
+//Dependiendo de la variable operación damos el resultado
+
+switch(op)
+
+{
+
+case 1: resultado=num1+num2;break;//sumar
+
+case 2: resultado=num1-num2;break;//restar
+
+case 3: resultado=num1*num2;break;//multiplicar
+
+case 4: resultado=num1/num2;break;//dividir
+
+case 5: resultado=num1/100*num2;break;//tanto por ciento
+
+case 6: resultado=Math.pow(num1,num2);break;//elevar un número a otro
+
+case 7: resultado=Math.max(num1,num2);break;//Da el valor mayor entre dos
+
+case 8: resultado=Math.min(num1,num2);break;//Da el valor mínimo entre dos
+
+ default: resultado="No se ha escojido la opcion";break;//Si no se ha seleccionado nada
+
+}
+
+alert("El resultado es = "+resultado);//damos el resultado en un alert
+
+}
+
+//funcion calcular2 para las operaciones que hacemos sobre un solo número
+
+function calcular2()
+
+{
+
+//creamos las variables
+
+var num=0,resultado=0;
+
+//Recojemos el valor y lo transformamos en un número float
+
+num=parseFloat(this.document.calculadora2.numero.value);
+
+//dependiendo de la variable operación hacemos una cosa o otra
+
+switch(op)
+
+{
+
+case 9: resultado=Math.abs(num);break;//valor absoluto
+
+case 10: resultado=Math.sin(num*Math.PI/180);break;//calcula el seno de un angulo en grados
+
+case 11: resultado=Math.cos(num*Math.PI/180);break;//calcula el coseno de un angulo
+
+case 12: resultado=Math.tan(num*Math.PI/180);break;//calcula la tangente de un angulo
+
+case 13: resultado=Math.sqrt(num);break;//calcula la raiz de un número
+
+case 14: resultado=Math.asin(num)*180/Math.PI+"º";break;//calcula el arcoseno en grados
+
+case 15: resultado=Math.acos(num)*180/Math.PI+"º";break;//calcula el arcocoseno en grados
+
+case 16: resultado=Math.atan(num)*180/Math.PI+"º";break;//calcula el arcotangente en grados
+
+ default: resultado="No se ha escojido la opcion";break;//si no se escoje ninguna opción
+
+}
+
+alert("El resultado es = "+resultado);//damos el resultado
+
+}
+
+
+
+
+
+</script>
+
+<hr>
+
+
+
+<h2>CALCULADORA SENCILLA</h2>
+
+<form name="calculadora">
+
+<table border="0" bgcolor="lightgreen" width="70%">
+
+<tbody><tr>
+
+<td>Número 1 </td><td><input name="numero1" value="0"></td>
+
+<td>Número 2 </td><td><input name="numero2" value="0"></td>
+
+</tr>
+
+<tr>
+
+<td><input name="operacion" onclick="op=1;" type="radio">SUMA</td>
+
+<td><input name="operacion" onclick="op=2;" type="radio">RESTA</td>
+
+<td><input name="operacion" onclick="op=3;" type="radio">MULTIPLICACIÓN</td>
+
+<td><input name="operacion" onclick="op=4;" type="radio">DIVISIÓN</td>
+
+</tr>
+
+<tr>
+
+<td><input name="operacion" onclick="op=5;" type="radio">Num1 % de Num2</td>
+
+<td><input name="operacion" onclick="op=6;" type="radio">Num1^<sup>Num2</sup></td>
+
+<td><input name="operacion" onclick="op=7;" type="radio">Max(num1,num2)</td>
+
+<td><input name="operacion" onclick="op=8;" type="radio">Min(num1,num2)</td>
+
+</tr>
+
+<tr>
+
+<td></td>
+
+<td><input onclick="calcular();" value="Calcular" type="button"></td>
+
+<td><input onclick="op=0;" value="Borrar" type="reset"></td>
+
+<td></td>
+
+</tr>
+
+</tbody></table>
+
+</form>
+
+
+
+<hr>
+
+
+
+<h2>CALCULADORA CIENTÍFICA</h2>
+
+<form name="calculadora2">
+
+<table border="0" bgcolor="lightgreen" width="70%">
+
+<tbody><tr>
+
+<td>Número  </td><td><input name="numero" value="0"></td>
+
+<td></td><td></td>
+
+</tr>
+
+<tr>
+
+<td><input name="operacion" onclick="op=9;" type="radio">ABS(num)</td>
+
+<td><input name="operacion" onclick="op=10;" type="radio">Seno(num)</td>
+
+<td><input name="operacion" onclick="op=11;" type="radio">Cos(num)</td>
+
+<td><input name="operacion" onclick="op=12;" type="radio">Tan(num)</td>
+
+</tr>
+
+<tr>
+
+<td><input name="operacion" onclick="op=13;" type="radio">Raiz(num)</td>
+
+<td><input name="operacion" onclick="op=14;" type="radio">ArcoSeno(num)</td>
+
+<td><input name="operacion" onclick="op=15;" type="radio">ArcoCos(num)</td>
+
+<td><input name="operacion" onclick="op=16;" type="radio">ArcoTan(num)</td>
+
+</tr>
+
+<tr>
+
+<td></td>
+
+<td><input onclick="calcular2();" value="Calcular" type="button"></td>
+
+<td><input onclick="op=0;" value="Borrar" type="reset"></td>
+
+<td></td>
+
+</tr>
+
+</tbody></table>
+
+</form>
+
+<hr>
+
+</center>
+
+</body>
+
+</html>

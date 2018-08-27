@@ -1,0 +1,40 @@
+/** Seleccionando IDS*/
+#titulo {
+  color:red;
+}
+/* Seleccionado Clases */
+.azul {
+  color:blue;
+}
+
+/* Seleccionado Ids y Clases */
+#titulo.titulo {
+  font-size: 30px;
+}
+.titulo {
+  font-size: 60px;
+}
+/*Seleccionando 2 clases **/
+.titulo.azul {
+  color:red;
+  font-size:100px;
+}
+/*Seleccionando Etiquetas **/
+p {
+  color: brown;
+}
+h3 {
+  color:green;
+}
+img {
+  width:300px;
+  float:right;
+}
+
+/*Seleccionando Etiquetas y ID`S **/
+h2#titulo {
+  color:orange;
+}
+img#logo {
+  float:none;
+}

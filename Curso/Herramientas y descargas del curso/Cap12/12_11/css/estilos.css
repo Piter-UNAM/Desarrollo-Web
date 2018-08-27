@@ -1,0 +1,90 @@
+/** Seleccionando IDS*/
+#titulo {
+  color:red;
+}
+/* Seleccionado Clases */
+.azul {
+  color:blue;
+}
+
+/* Seleccionado Ids y Clases */
+#titulo.titulo {
+  font-size: 30px;
+}
+.titulo {
+  font-size: 60px;
+}
+/*Seleccionando 2 clases **/
+.titulo.azul {
+  color:red;
+  font-size:100px;
+}
+/*Seleccionando Etiquetas **/
+p {
+  color: brown;
+}
+h3 {
+  color:green;
+}
+img {
+  width:300px;
+  float:right;
+}
+
+/*Seleccionando Etiquetas y ID`S **/
+h2#titulo {
+  color:orange;
+}
+img#logo {
+  float:none;
+}
+/*Seleccionando Etiquetas y clases **/
+section.seccion {
+  background: orange;
+}
+img.logo {
+  margin-top:20px;
+}
+
+/*Seleccionando elemento Universal **/
+/*
+* {
+  color:red!important;
+  font-size:20px!important;
+}
+*/
+#listado-cursos * {
+  color:green;
+}
+div.noticia *{
+  font-size:20px;
+}
+/*Seleccionando elementos en grupo**/
+
+h2, h3, p {
+  text-transform: uppercase;
+}
+h2, h3 {
+  text-align: center;
+}
+/** Seleccionando descendientes **/
+#navegacion {
+  background-color: orange
+}
+#navegacion ul {
+  list-style:none;
+}
+#navegacion ul li {
+  display: inline;
+}
+#navegacion ul li a {
+  color:white;
+}
+/** Seleccionando hijos **/
+
+#listado-cursos > li {
+  color:white;
+}
+#listado-cursos li ul > li {
+  color:red;
+}

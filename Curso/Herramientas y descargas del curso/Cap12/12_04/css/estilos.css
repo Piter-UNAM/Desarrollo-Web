@@ -1,0 +1,21 @@
+/** Seleccionando IDS*/
+#titulo {
+  color:red;
+}
+/* Seleccionado Clases */
+.azul {
+  color:blue;
+}
+
+/* Seleccionado Ids y Clases */
+#titulo.titulo {
+  font-size: 30px;
+}
+.titulo {
+  font-size: 60px;
+}
+/*Seleccionando 2 clases **/
+.titulo.azul {
+  color:red;
+  font-size:100px;
+}

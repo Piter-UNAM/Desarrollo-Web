@@ -1,0 +1,86 @@
+html {
+     height: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body{
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb60b3+0,c146a1+8,a80077+51,db36a4+100 */
+     background: rgb(203,96,179); /* Old browsers */
+     background: -moz-linear-gradient(top, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 8%, rgba(168,0,119,1) 51%, rgba(219,54,164,1) 100%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top, rgba(203,96,179,1) 0%,rgba(193,70,161,1) 8%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom, rgba(203,96,179,1) 0%,rgba(193,70,161,1) 8%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=0 ); /* IE6-9 */
+
+     background-attachment: fixed;
+     font-family: arial, helvetica, sans-serif;
+     height: 100%;
+}
+header{
+     text-align: center;
+     padding: 20px 0;
+}
+.contenedor{
+     margin: 0 auto;
+     width: 800px;
+}
+div.hero img{
+     width: 100%;
+}
+h2{
+     text-align: center;
+     color: white;
+     text-transform: uppercase;
+     margin: 30px 0;
+}
+ul.lista-productos{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+ul.lista-productos li{
+     float: left;
+     width: 50%;
+     padding: 20px;
+     text-align: center;
+}
+ul.lista-productos li:nth-child(2n+1){
+     clear: both;
+}
+
+ul.lista-productos li img{
+     border: 10px solid rgba(128,1,195,.45) ;
+}
+ul.lista-productos li img:hover{
+     border: 10px solid rgba(128,1,195,1) ;
+}
+ul.lista-productos li p{
+     font-size: 20px;
+     font-weight: bold;
+     color: white;
+     margin-top: 10px;
+}
+ul.lista-productos li p span{
+     font-size: 40px;
+     color: #ffce00;
+}
+.boton{
+     background-color: #ffce00;
+     padding: 10px 40px;
+     display: inline-block;
+     margin: 10px;
+     text-decoration: none;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: rgba(128,1,195,.7);
+     font-size: 18px;
+}
+.boton:hover{
+     color: rgba(128,1,195,1);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+          <meta charset="utf-8">
+          <title></title>
+     </head>
+     <body>
+          <form class="" action="Practica1.html" method="post">
+               <input type="text" name="texto" onclick="colores()"><br>
+               <input type="text" name="texto"><br>
+               <input type="text" name="texto"><br>
+               <input type="text" name="texto"><br>
+               <input type="text" name="texto" onclick="colores2()"><br>
+               <input type="text" name="texto"><br>
+               <input type="text" name="texto"><br>
+               <input type="text" name="texto"><br>
+               <input type="text" name="texto"><br>
+               <input type="text" name="texto"><br>
+          </form>
+     </body>
+</html>
+<script type="text/javascript">
+function colores(){
+     var color=document.getElementsByName("texto");
+     for ( var i = 0; i <= 10; i++) {
+     color[i].value="Hola";
+     if(i==4){
+          color[i].value="Adiós";
+          color[i].style.color="#5adf24";
+     }
+     else {
+          color[i].style.color="#eb4013";
+     }
+     }
+}
+function colores2(){
+     var color=document.getElementsByName("texto");
+     for ( var i = 0; i <= 10; i++) {
+     color[i].value="Hola";
+     if(i==4){
+          color[i].value="Adiós";
+          color[i].style.color="#3014dd";
+     }
+     else {
+          color[i].style.color="#ec11cf";
+     }
+     }
+}
+</script>

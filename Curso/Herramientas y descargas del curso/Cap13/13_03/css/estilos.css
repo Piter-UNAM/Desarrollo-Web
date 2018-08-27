@@ -1,0 +1,26 @@
+/* Font Family */
+body {
+  font-family: Arial, Helvetica, serif;
+}
+h2 {
+  font-family: Verdana, Geneva, sans-serif;
+}
+h3 {
+  font-family: 'Times New Roman', serif;,
+}
+p {
+  font-family: Geneva, Helvetica, sans-serif;
+}
+
+/** Font Size **/
+h2 {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-size: 3em;
+}
+p {
+  font-size: 18px;
+}
+a {
+  font-size: 20px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calificaciones</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-6">
+            <h2>Calificaciones</h2>
+            <form>
+                <div class="form-group">
+                    <label for="valorA">Introduce la primer calificación</label>
+                    <input type="text" name="valorA" id="valorA" class="form-control"/>
+                    <label for="valorb">Introduce la segunda calificación</label>
+                    <input type="text" name="valorB" id="valorB" class="form-control"/>
+                    <label for="valorb">Introduce la tercer calificación</label>
+                    <input type="text" name="valorC" id="valorC" class="form-control"/>
+                    <label for="valorb">Introduce la cuarta calificación</label>
+                    <input type="text" name="valorD" id="valorD" class="form-control"/>
+                    <label for="valorb">Introduce la quinta calificación</label>
+                    <input type="text" name="valorE" id="valorE" class="form-control"/>
+                    <label for="valorb">Introduce la sexta calificación</label>
+                    <input type="text" name="valorF" id="valorF" class="form-control"/>
+                    <label for="valorb">Introduce la septima calificación</label>
+                    <input type="text" name="valorG" id="valorG" class="form-control"/>
+                    <label for="valorb">Introduce la octava calificación</label>
+                    <input type="text" name="valorG" id="valorH" class="form-control"/>
+                    <label for="valorb">Introduce la novena calificación</label>
+                    <input type="text" name="valorI" id="valorI" class="form-control"/>
+                    <label for="valorb">Introduce la decima calificación</label>
+                    <input type="text" name="valorJ" id="valorJ" class="form-control"/>
+                </div>
+            </form>
+
+            <button id="calcula" class="btn btn-default">Calcular</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+
+
+            //FUNCIÓN DE SUMA
+            function operacion(a,b,c,d,e,f,g,h,i,j){
+                var resultado = 0;
+                resultado = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e) + parseFloat(f) + parseFloat(g) + parseFloat(h) + parseFloat(i) + parseFloat(j);
+                if (isNaN(resultado)) {
+                    alert("Introduce sólo números");
+                } else  {
+                    if (resultado == 0) {
+                        alert("Resultado es cero.")
+                    } else {
+                        resultado = resultado/10;
+                        alert("Tu calificación final es:" + resultado);
+                    }
+                }
+            }
+
+            jQuery('#calcula').click(function(){
+                    var num1 = $("#valorA").val();
+                    var num2 = $('#valorB').val();
+                    var num3 = $('#valorC').val();
+                    var num4 = $('#valorD').val();
+                    var num5 = $('#valorE').val();
+                    var num6 = $('#valorF').val();
+                    var num7 = $('#valorG').val();
+                    var num8 = $('#valorH').val();
+                    var num9 = $('#valorI').val();
+                    var num10 = $('#valorJ').val();
+                    var promedio;
+
+                    operacion(num1,num2,num3,num4,num5,num6,num7,num8,num9,num10);
+            });
+
+        });
+    </script>
+  </body>
+</html>
